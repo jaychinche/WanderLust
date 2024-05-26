@@ -1,4 +1,6 @@
+//design Schema only
 const mongoose = require("mongoose");
+const Review = require("./review.js");
 
 const listingSchema = new mongoose.Schema({
     title: {
@@ -7,17 +9,35 @@ const listingSchema = new mongoose.Schema({
     },
     description: String,
     image: {
-        filename: String,
-        url: {
-            type: String,
-            default: "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Types%20Of%20Homes/Stock-Gray-Ranch-Style-Home-AdobeStock_279953994-copy.jpeg",
-            set: (v) => (v.trim() === "" ? "https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Types%20Of%20Homes/Stock-Gray-Ranch-Style-Home-AdobeStock_279953994-copy.jpeg" : v)
-        }
+       url:String,
+       filename:String
     },
     price: Number,
     location: String,
-    country: String
+    country: String,
+    reviews:[
+        {
+            type:mongoose.Schema.Types.ObjectId,
+            ref:"Review",
+        },
+    ],
+    owner:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"User",
+    }
+
 });
+
+
+//for this validation case : if listings is delete  them--> reviews also be deleted that purpose validation include....
+
+listingSchema.post("findOneAndDelete", async (listing) => {
+    if (listing) {
+        // Delete all reviews associated with the deleted listing
+        await Review.deleteMany({ _id: { $in: listing.reviews } });
+    }
+});
+
 
 const Listing = mongoose.model("Listing", listingSchema);
 
