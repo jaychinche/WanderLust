@@ -158,7 +158,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render("error.ejs", { message });
 });
 
-app.listen(8081, () => {
+app.listen(8080, () => {
     console.log("Server is started");
 });
 
