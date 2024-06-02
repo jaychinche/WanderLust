@@ -23,3 +23,47 @@ MERN stack Using
 7)Error handling
 8)Hashing concept
 
+
+
+
+chinchejay
+UjVAf6ZHWZSYRb9Jnpm install mongodb
+
+
+
+mongodb+srv://chinchejay:UjVAf6ZHWZSYRb9J@cluster0.iprlepa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+
+
+
+
+
+
+mongodb+srv://chinchejay:f60VuhfkCJpT46as@cluster0.em0vbrh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+
+
+how we can deploye our project 
+step1: store our database to clould like(we uses the MongoDb alas we store)
+then local to clold mongodbalass....
+
+
+step2:conncect mango pakage for cookess infomartion 
+
+add screet::session realted information also save::::adhi aplya local var store hot hoti ata cloud var hote
+
+
+step3: Deployment to render 
+
+ first we chnages add to our packages
+   "engines": {
+    "node": "21.6.1"
+  },
+
+
+
+  step:connect project to github:
+   step---1)  build command npm install
+          2) start command  node app.js
+          3)auto deploye click prorly

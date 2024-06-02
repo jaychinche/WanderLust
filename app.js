@@ -1,7 +1,7 @@
-
 if (process.env.NODE_ENV != "production") {
     require('dotenv').config();
 }
+
 
 const express = require("express");
 const app = express();
@@ -32,7 +32,6 @@ const listingRouter = require("./routes/listing.js");
 
 //for review another page arrage to acqure that
 const reviewRouter = require("./routes/review.js");
-
 const userRouter = require("./routes/user.js");
 
 
@@ -43,7 +42,11 @@ const ejsMate = require("ejs-mate");
 const wrapAsync = require("./util/wrapAsync.js");
 const ExpressError = require("./util/ExpressError.js");
 
-// const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
+
+
+
+
 const dbUrl = process.env.ATLASDB_URL;
 
 app.set("view engine", "ejs");
@@ -54,8 +57,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(express.static(path.join(__dirname, "/public")));
 
+
+
+
+
 const store = MongoStore.create({
-    mongoUrl: dbUrl,
+    // mongoUrl: dbUrl,
+    mongoUrl:  dbUrl ,
+
     crypto: { secret: process.env.SECRET },
     touchAfter: 24 * 3600,
 });
@@ -66,7 +75,7 @@ store.on("error", (err) => {
 
 const sessionOption = {
     store,
-    secret:process.env.SECRET,
+    secret: process.env.SECRET,
     resave: false,
     saveUninitialized: true,
     cookie: {
@@ -87,6 +96,7 @@ app.use(passport.session());
 
 
 passport.use(new LocalStrategy(User.authenticate()));
+
 //session rahanya sati
 passport.serializeUser(User.serializeUser());
 
@@ -126,6 +136,13 @@ main().then(() => {
     console.log("Connection successfully");
 }).catch(err => console.log(err));
 
+
+
+
+
+
+
+
 async function main() {
     await mongoose.connect(dbUrl);
 }
@@ -141,7 +158,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render("error.ejs", { message });
 });
 
-app.listen(8080, () => {
+app.listen(8081, () => {
     console.log("Server is started");
 });
 

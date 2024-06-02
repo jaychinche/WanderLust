@@ -1,4 +1,3 @@
-//only Data to insert in the database
 const sampleListings = [
   {
     title: "Cozy Beachfront Cottage",
