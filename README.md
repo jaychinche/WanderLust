@@ -12,7 +12,7 @@ Image Management: Utilized Cloudinary for storage and display of property images
 Robust Backend: Developed a backend with Express.js handling API endpoints, user authentication, and database operations using MongoDB.
 
 Demo
-You can access a live demo of the application : https://wanderlust-pro-2mz4.onrender.com/
+You can access a live demo of the application : https://wanderlustproject-l2iq.onrender.com
 
 Technologies Used
 HTML
