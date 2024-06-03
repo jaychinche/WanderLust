@@ -137,6 +137,19 @@ body {
  
 }
 
+@media only screen and (max-width: 769px) {
+  #map{
+    height: 400px;
+    width: 63vh;
+    margin-left: -40%;
+}
+}
+
+@media only screen and (max-width: 769px) {
+  .maphed{
+    margin-left: -30%;
+  }
+}
 
 
 
