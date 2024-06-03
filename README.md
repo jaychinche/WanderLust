@@ -1,4 +1,4 @@
-#WanderLust
+WanderLust
 
 WanderLust is a comprehensive travel listing web application designed to provide users with a platform to list properties and explore, review, and filter properties based on categories and locations. It offers a visually appealing interface, secure user authentication, and efficient data management.
 
