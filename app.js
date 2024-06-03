@@ -42,6 +42,7 @@ const ejsMate = require("ejs-mate");
 const wrapAsync = require("./util/wrapAsync.js");
 const ExpressError = require("./util/ExpressError.js");
 
+
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
 
@@ -158,7 +159,9 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render("error.ejs", { message });
 });
 
-app.listen(8080, () => {
+
+const PORT=process.env.PORT || 8000
+app.listen(PORT, () => {
     console.log("Server is started");
 });
 
