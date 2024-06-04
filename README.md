@@ -27,8 +27,7 @@ Bootstrap
 Installation
 Clone the repository:git clone: https://github.com/jaychinche/WanderLust
 
-# ScreenShoot 
-![Uploading Screenshot 2024-06-03 at 10.05.40 AM.png…]()
+
 
 
 
