@@ -38,7 +38,23 @@ You can access a live demo of the application: [WanderLust Demo](https://wanderl
   <li>Clone the repository: <code>git clone https://github.com/jaychinche/WanderLust</code></li>
 </ul>
 
+## ScreenShot
 
+<img width="1440" alt="Screenshot 2024-06-03 at 10 05 10 AM" src="https://github.com/jaychinche/WanderLust/assets/94739010/b26749b7-6be6-4729-929c-ea41c6ce6c7d">
+
+
+<img width="1440" alt="Screenshot 2024-06-03 at 10 05 20 AM" src="https://github.com/jaychinche/WanderLust/assets/94739010/1346e012-aee6-443c-bce2-4ff70390ddce">
+
+<img width="1440" alt="Screenshot 2024-06-03 at 10 06 28 AM" src="https://github.com/jaychinche/WanderLust/assets/94739010/db172198-558e-42aa-9f0b-00e3ec1a3741">
+
+<img width="1440" alt="Screenshot 2024-06-03 at 10 07 01 AM" src="https://github.com/jaychinche/WanderLust/assets/94739010/358f1c9d-224e-40da-85ef-608b2e9cf714">
+
+
+<img width="1440" alt="Screenshot 2024-06-03 at 12 07 17 PM" src="https://github.com/jaychinche/WanderLust/assets/94739010/f5801daa-19cc-4367-bff2-2013bfc59ab3">
+
+
+
+<img width="1440" alt="Screenshot 2024-06-03 at 10 07 01 AM" src="https://github.com/jaychinche/WanderLust/assets/94739010/1f998e41-5ba9-4e5b-a5dc-17a2370192e3">
 
 
 
