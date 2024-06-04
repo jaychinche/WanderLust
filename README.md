@@ -54,7 +54,6 @@ You can access a live demo of the application: [WanderLust Demo](https://wanderl
 
 
 
-<img width="1440" alt="Screenshot 2024-06-03 at 10 07 01 AM" src="https://github.com/jaychinche/WanderLust/assets/94739010/1f998e41-5ba9-4e5b-a5dc-17a2370192e3">
 
 
 
